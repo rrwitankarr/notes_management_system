@@ -1,11 +1,13 @@
 # Notes Management System
 
-A simple web-based DBMS project developed using Java Servlets and Oracle Database for storing and retrieving notes.
+A web-based DBMS project developed using Java Servlets and Oracle Database for managing notes efficiently through CRUD operations.
 
 ## Features
-- Add and save notes
-- Automatically stores note ID and creation date
+- Create and save notes
 - Retrieve and display all saved notes
+- Edit and update existing notes
+- Delete notes
+- Automatically stores note ID and creation date
 - Simple and user-friendly interface
 
 ## Technologies Used
@@ -24,10 +26,15 @@ The project uses an Oracle database table named `notes` containing:
 ## Project Structure
 
 ```text
-src/
-└── com/
-    └── notes/
-        └── app/
-            ├── DBConnection.java
-            ├── SaveNoteServlet.java
-            └── GetNotesServlet.java
+notesapp/
+│
+├── WEB-INF/
+│
+├── index.html
+│
+├── DBConnection.java
+├── SaveNoteServlet.java
+├── GetNotesServlet.java
+├── EditNoteServlet.java
+├── UpdateNoteServlet.java
+└── DeleteNoteServlet.java
